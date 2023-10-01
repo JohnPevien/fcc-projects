@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: url("https://res.cloudinary.com/dka0kjngw/image/upload/w_1200/v1683529063/milad-fakurian-nY14Fs8pxT8-unsplash_d0sim1.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span {
+  font-family: inherit;
+}
+
+#title,
+#description {
+  color: #fff;
+  max-width: 600px;
+}
+
+form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+.optional {
+  font-size: 12px;
+  vertical-align: super;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  outline: 0;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 100%;
+
+  box-shadow: 0 0 10px #f73da7;
+}
+
+.form-group select option {
+  padding: 10px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* Radio button */
+
+.gender-label {
+  font-size: ;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  position: relative;
+  padding-left: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.radio-group label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: #fff;
+}
+
+input[type="radio"]:focus + label {
+  color: #f73da7;
+}
+
+input[type="radio"] + label:before {
+  box-shadow: 0 0 10px #f73da7;
+}
+
+input[type="radio"]:checked + label:before {
+  box-shadow: 0 0 10px #f73da7, 0 0 20px #f73da7, 0 0 30px #f73da7;
+}
+
+input[type="radio"]:hover + label:before {
+  background-color: #f73da7;
+}
+
+input[type="radio"]:focus + label:before {
+  background-color: #f73da7;
+}
+
+#language > div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#language > div > * {
+  flex: 0;
+
+  margin-bottom: 0;
+}
+
+#language input[type="checkbox"] {
+  box-shadow: none;
+  transform: scale(1.5);
+}
+
+button[type="submit"] {
+  all: unset;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  background-color: #f73da7;
+  cursor: pointer;
+}
