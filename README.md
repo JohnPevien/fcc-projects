@@ -1,4 +1,4 @@
-# Readme for freeCodeCamp Certification Projects
+# freeCodeCamp Certification Projects
 
 ## Introduction
 
